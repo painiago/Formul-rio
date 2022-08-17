@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="formulario">
+
+        <form class="tabelaform">
+            <fieldset class="grupo"> 
+                    <h1 class="texto">Formulário - Saúde Alimentar</h1>
+                    <div class="tabela0">
+                        <div class="campo">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="imglogo">
+                            <img src="img/logo.png" alt="logo">
+                        </div>
+                        <div class="campo">
+                            <label for="datanascimento">Data de nascimento:</label>
+                            <input type="date" id="data" name="data" required>
+                        </div>
+
+                        <div class="sexodireito">
+                            <label>Sexo: </label>
+    
+                            <label for="sexofmasculino">
+                                <input type="radio" id="sexomasculino" name="sexomasculino" value="masculino" required> Masculino
+                            </label>
+                    
+                            <label for="sexofeminino">
+                                <input type="radio" id="sexofeminino" name="sexofeminino" value="feminino" required> Feminino
+                            </label>
+                        </div>
+
+                        <div class="campo">
+                            <label for="estado">Estado</label>
+                            <select id="estado">
+                                <option selected disabled value="">Selecione</option>
+                                    <option>Bahia</option>
+                                    <option>São paulo</option>
+                                    <option>Rio de Janeiro</option>
+                                    <option>Minas Gerais</option>
+                                    <option>Belo Horizonte</option>
+                                    <option>Goiáis</option>
+                                    <option>Mato Grosso</option>
+                                    
+                                   </select>
+                        </div>
+             </fieldset>
+             <!--  -->
+            <fieldset class="grupo">
+                    <div class="campo">
+                        <div class="fundocor">
+                            <label class="pergunta1"><strong> 1 - Quais alimentos você consumiu nos últimos 7 dias?</strong></label>
+                            <br>
+                            <br>
+                            <label for="opcao1">
+                                <input type="checkbox" id="opcao1" name="opcao1" value="opcao1" > Salada, cenoura, tomate, alface, etc.
+                            </label>
+                            <br>
+                            <label for="opcao2">
+                                <input type="checkbox" id="opcao2" name="opcao2" value="opcao2" > Verdira cozidas (abobora, brócolis, batata, mandioca).
+                            </label>
+                            <br>
+                            <label for="opcao3">
+                                <input type="checkbox" id="opcao3" name="opcao3" value="opcao3" > Feijão, Arroz, Farinha.
+                            </label>
+                            <br>
+                            <label for="opcao4">
+                                <input type="checkbox" id="opcao4" name="opcao4" value="opcao4" > Salgados fritos (coxinha, batata frita, pastel, etc)
+                            </label>
+                            <br>
+                            <label for="opcao5">
+                                <input type="checkbox" id="opcao5" name="opcao5" value="opcao5" > Bolachas / biscoito doces, chocolates, doces etc.
+                            </label>
+                            <br>
+                            <label for="opcao6">
+                                <input type="checkbox" id="opcao6" name="opcao6" value="opcao6" > Refrigerantes / suco industrializado. 
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <!--  -->
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <div class="fundocor">
+                            <label class="pergunta1"><strong> 2 - Quantas refeições faz ao dia?</strong></label>
+                            <br>
+                            <br>
+                            <label for="opcao1" class="">
+                                <input type="checkbox" id="opcao1" name="opcao1" value="opcao1" > 1 Refeição.
+                            </label>
+                            <br>
+                            <label for="opcao2">
+                                <input type="checkbox" id="opcao2" name="opcao2" value="opcao2" > 2 Refeições.
+                            </label>
+                            <br>
+                            <label for="opcao3">
+                                <input type="checkbox" id="opcao3" name="opcao3" value="opcao3" > 3 Refeições.
+                            </label>
+                            <br>
+                            <label for="opcao4">
+                                <label>Outra...</label>
+                                <input type="text" id="opcao4" name="opcao4" value="" > 
+                            </label>
+                           
+                           
+                        </div>
+                    </div>
+                </fieldset>
+               <!--  -->
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <div class="fundocor">
+                            <label class="pergunta1"><strong> 3 - Qual refeição você considera a mais importante?</strong></label>
+                            <br>
+                            <br>
+                            <label for="opcao1" class="">
+                                <input type="checkbox" id="opcao1" name="opcao1" value="opcao1" > Café da manhã.
+                            </label>
+                            <br>
+                            <label for="opcao2">
+                                <input type="checkbox" id="opcao2" name="opcao2" value="opcao2" > Almoço.
+                            </label>
+                            <br>
+                            <label for="opcao3">
+                                <input type="checkbox" id="opcao3" name="opcao3" value="opcao3" > Jantar.
+                            </label>
+                            <br>
+                            <label for="opcao4">
+                                <label> Outra...</label>
+                                <input type="text" id="opcao4" name="opcao4" value="" > 
+                            </label>
+                           
+                        </div>
+                    </div>
+                </fieldset>
+
+                
+                    <button class="botaoenviar" type="submit">Enviar</button>
+                
+            
+         </form>
+
+    </div>
+    
+
+
+
+</body>
+</html>
